@@ -1,5 +1,5 @@
 import React from 'react'
-import { ABoutDesc, ABoutUsImgText, ABoutUsRedBg, AboutBtn, AboutBtnIcon, AboutBtnWrap, AboutCardsContainer, AboutCardsWrap, AboutContainer, AboutDescWrap, AboutHeading, AboutHeadingWrap, AboutInfoContainer, AboutInfoTitle, AboutInfoWrap,AboutUsImgContainer, AboutUsImgWrap, AboutWrap, CardsDesc, CardsIcon, CardsIconTitle, CardsIconWrap, PerksContainer, PerksWrap } from '../../styles/About'
+import { ABoutDesc, ABoutUsImgText, ABoutUsRedBg, AboutBtn, AboutBtnIcon, AboutBtnWrap, AboutCardsContainer, AboutCardsWrap, AboutContainer, AboutDescWrap, AboutHeading, AboutHeadingWrap, AboutInfo, AboutInfoContainer, AboutInfoTitle, AboutInfoWrap,AboutUsImgContainer, AboutUsImgWrap, AboutWrap, CardsDesc, CardsIcon, CardsIconTitle, CardsIconWrap, PerksContainer, PerksWrap } from '../../styles/About'
 import { GiProgression } from "react-icons/gi";
 import { GiWeightLiftingUp } from "react-icons/gi";
 import { LiaListAlt } from "react-icons/lia";
@@ -37,6 +37,7 @@ const About = () => {
                     ))}
             </AboutCardsContainer>
             <AboutInfoContainer>
+                <AboutInfo>
                 <AboutInfoWrap>
                     <HeroImgWrap>
                         <HeroDesignImg src = {HeroImage} />
@@ -69,15 +70,16 @@ const About = () => {
                             </CardsIcon>
                             FANCY GYM MACHINES
                         </PerksWrap>
-                    </PerksContainer>
-                    <AboutBtnWrap>
+                    </PerksContainer>           
+                </AboutInfoWrap>
+                <AboutBtnWrap>
                         <AboutBtn href = "#">TAKE A TOUR
                             <AboutBtnIcon>
                                 <LuArrowRight />
                             </AboutBtnIcon>
                         </AboutBtn>
                     </AboutBtnWrap>
-                </AboutInfoWrap>
+                </AboutInfo>
                 <AboutUsImgContainer>
                     <ABoutUsImgText>
 

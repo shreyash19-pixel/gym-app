@@ -93,11 +93,21 @@ export const CardsDesc = styled.p`
 
 export const AboutInfoContainer = styled.div`
     width: 100%;
-
     display: flex;
     justify-content: center;
 
    
+`
+
+export const AboutInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    @media (max-width: 1000px)
+    {
+        align-items: center;
+    }
 `
 
 export const AboutInfoWrap = styled.div`
