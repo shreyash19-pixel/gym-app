@@ -118,7 +118,12 @@ export const ClassesImgContainer1 = styled.div`
     height: 100%;
     transition: transform .5s ease-in-out;
     
+<<<<<<< HEAD
     &:hover{   
+=======
+    &:hover{
+        transition: transform .5s ease-in-out;
+>>>>>>> efaea4a1ff1a0415a0d9418056724339309390ea
         transform: scale(1.3);
         filter: grayscale(0);
     
