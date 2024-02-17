@@ -116,9 +116,9 @@ export const ClassesImgContainer1 = styled.div`
     background-size: 610px 405px;
     width: 100%;
     height: 100%;
+    transition: transform .5s ease-in-out;
     
-    &:hover{
-        transition: all .5s ease-in-out;
+    &:hover{   
         transform: scale(1.3);
         filter: grayscale(0);
     
