@@ -107,6 +107,7 @@ export const AboutInfo = styled.div`
     @media (max-width: 1000px)
     {
         align-items: center;
+        gap: 70px;
     }
 `
 
@@ -120,7 +121,7 @@ export const AboutInfoWrap = styled.div`
     {
         text-align: center;
         align-items: center;
-        gap: 45px;
+        gap: 30px;
     }
 `
 
