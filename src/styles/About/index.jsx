@@ -21,7 +21,7 @@ export const AboutContainer = styled.div`
 
 export const AboutWrap = styled.div`
     width: 100%;
-    max-width: 1350px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,14 +95,14 @@ export const AboutInfoContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-
+    gap: 80px;
    
 `
 
 export const AboutInfo = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
 
     @media (max-width: 1000px)
     {
@@ -115,7 +115,7 @@ export const AboutInfoWrap = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 25px;
 
     @media (max-width: 1000px)
     {
@@ -141,8 +141,8 @@ export const AboutHeadingWrap = styled.div`
 `
 
 export const AboutHeading = styled.h1`
-    font-weight: 600;
-    font-size: 45px;
+    font-weight: 800;
+    font-size: 35px;
 `
 
 export const AboutDescWrap = styled.div`
@@ -157,7 +157,6 @@ export const ABoutDesc = styled.p`
 export const PerksContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
     @media (max-width: 620px)
     {
         grid-template-columns: 1fr;
