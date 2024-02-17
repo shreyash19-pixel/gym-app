@@ -119,7 +119,6 @@ export const ClassesImgContainer1 = styled.div`
     transition: transform .5s ease-in-out;
     
     &:hover{
-        transition: transform .5s ease-in-out;
         transform: scale(1.3);
         filter: grayscale(0);
     
