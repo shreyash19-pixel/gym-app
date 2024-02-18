@@ -23,7 +23,7 @@ export const ClassesWrap = styled.div`
     max-width: 1240px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: ${(props) => (props.coach ? "80px" : "40px")};
 `
 
 export const HeadingWrap = styled.div`
@@ -219,6 +219,16 @@ export const ClassesImgContainer6 = styled(ClassesImgContainer1)`
     background-image: url(${Workout});
     background-size: 610px 430px;
 
+    @media (max-width: 1000px)
+    {
+        background-size: 1000px 400px;
+    }
+
+    @media (max-width: 450px)
+    {
+        background-size: 400px 400px;
+    }
+    
 `
 
 

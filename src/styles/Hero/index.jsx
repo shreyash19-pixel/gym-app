@@ -45,6 +45,7 @@ export const HeroInfoWrap = styled.div`
 
 export const HeroImgWrap = styled.div`
     position: relative;
+
 `
 export const HeroImgTextWrap = styled.div`
     position: absolute;
