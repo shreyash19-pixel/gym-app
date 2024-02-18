@@ -1,10 +1,22 @@
 import styled from 'styled-components'
+import BgDotImg from '../../assets/dot-bg.png'
+import BgShapeImg from '../../assets/bg-attachment.png'
 
 export const CoachesContainer = styled.div`
     width: 100%;
     padding: 120px 25px;
     display: flex;
     justify-content: center;
+    background-image: url(${BgDotImg});
+    position: relative;
+
+    &::after
+    {
+        content: url(${BgShapeImg});
+        position: absolute;
+        top:0;
+        right:0;
+    }
 
     @media (max-width: 500px)
     {
