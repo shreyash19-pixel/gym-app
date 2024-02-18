@@ -253,9 +253,9 @@ export const ChooseInfoIconWrap = styled.div`
         background-color: #FF0336;
     }
 
-    @media (max-width: 480px)
+    @media (max-width: 500px)
     {
-        font-size: 30px;
+        font-size: 50px;
     }
 `
 
@@ -265,9 +265,9 @@ export const ChooseInfoPerks = styled.div`
     font-size: 20px;
     color: white;
     font-weight: 600;
-    @media (max-width: 480px)
+    @media (max-width: 500px)
     {
-        font-size: 17px;
+        font-size: 22px;
     }
     
 `
