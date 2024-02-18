@@ -3,6 +3,7 @@ import Nav from '../../components/Nav'
 import Hero from '../../views/Hero'
 import About from '../../views/About'
 import Classes from '../../views/Classes'
+import ChooseUs from '../../views/ChooseUs'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <Hero />
         <About />
         <Classes />
+        <ChooseUs />
     </div>
   )
 }
