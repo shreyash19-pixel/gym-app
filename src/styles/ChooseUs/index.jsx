@@ -32,7 +32,7 @@ export const ChooseInfoContainer = styled.div`
     max-width: 1240px;
     padding-inline: 30px;
     display: flex;
-    gap: 50px;
+    gap: 70px;
 
     @media (max-width: 1000px)
     {
@@ -134,7 +134,7 @@ export const ChooseUsImgContainer = styled.div`
         background-color: #FF0336;
         position: absolute;
         top: 85px;
-        right: 4%;
+        right: -1%;
         transform: rotate(-6deg);
     }
   
@@ -191,6 +191,12 @@ export const ChooseInfoTitleWrap = styled.div`
     color: white;
     font-size: 40px;
     font-weight: 700;
+
+    @media (max-width: 1000px)
+    {
+        width: 100%;
+        max-width: 600px;
+    }
 
     @media (max-width: 480px)
     {
