@@ -17,7 +17,7 @@ export const TestiWrap = styled.div`
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 130px;
 
     @media (max-width: 1000px)
     {
@@ -166,4 +166,24 @@ export const PersonDesignation = styled.h5`
         font-size: 10px;
     }
 
+`
+
+export const SponsorContainer = styled.div`
+    width: 100%;
+    max-width: 1240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    row-gap: 30px;
+`
+
+export const SponsorWrap = styled.div`
+
+`
+
+export const SponsorLogo = styled.img`
+    width: 100%;
+    max-width: 180px;
 `
