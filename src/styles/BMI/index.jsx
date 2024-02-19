@@ -91,7 +91,6 @@ export const BMIInput = styled.input`
         background-color: white;
         padding: 10px;
         font-size: 12px;
-        color: white;
     }
 `
 
