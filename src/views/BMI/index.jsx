@@ -48,6 +48,7 @@ const BMI = () => {
   return (
     <BMIContainer>
         <BMIWrap>
+
             <BMICalWrap>
                 <ChooseHeading>Let's Calculate Your  <BMIHeadingSpan>BMI</BMIHeadingSpan></ChooseHeading>
                 <BMIDesc>

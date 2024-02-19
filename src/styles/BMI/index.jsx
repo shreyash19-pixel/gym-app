@@ -8,13 +8,12 @@ export const BMIContainer = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
 
    
 
 `
+
 
 export const BMIWrap = styled.div`
     width: 100%;
@@ -26,8 +25,6 @@ export const BMIWrap = styled.div`
     @media (max-width: 600px)
     {
        padding-inline: 20px;
-       background-color: rgba(0, 0, 0, 0.5);
-       padding-block: 60px;
     }
 `
 
@@ -37,10 +34,8 @@ export const BMICalWrap = styled.div`
     display: flex;
     flex-direction: column;
     gap:30px;
+    position: relative;
 
-    @media (max-width: 450px) {
-        gap: 20px;
-    }
 `
 
 export const BMIHeadingSpan = styled.span`
