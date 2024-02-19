@@ -8,6 +8,9 @@ export const BMIContainer = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 export const BMIWrap = styled.div`

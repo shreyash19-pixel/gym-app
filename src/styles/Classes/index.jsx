@@ -101,10 +101,6 @@ export const ClassesImgWrap1 = styled.div`
             opacity: 1;
             transition: all .4s;
         }
-
-        > ${ClassesIcon} {
-            color: #FF0336;
-        }
     }
 `;
 
