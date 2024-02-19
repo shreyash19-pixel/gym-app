@@ -8,6 +8,7 @@ import Coaches from '../../views/Coaches'
 import Testimonial from '../../views/Testimonial'
 import BMI from '../../views/BMI'
 import Pricing from '../../views/Pricing'
+import Blog from '../../views/Blog'
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <Testimonial />
         <BMI />
         <Pricing />
+        <Blog />
     </div>
   )
 }

@@ -44,6 +44,7 @@ export const TrainersCardContainer = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 30px;
+    gap: ${(props) => (props.price ? "20px" : "0")};
 `
 
 export const TrainersCardWrap = styled.div`
