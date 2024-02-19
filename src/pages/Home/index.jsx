@@ -9,6 +9,7 @@ import Testimonial from '../../views/Testimonial'
 import BMI from '../../views/BMI'
 import Pricing from '../../views/Pricing'
 import Blog from '../../views/Blog'
+import Call from '../../views/Call'
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
         <BMI />
         <Pricing />
         <Blog />
+        <Call />
     </div>
   )
 }

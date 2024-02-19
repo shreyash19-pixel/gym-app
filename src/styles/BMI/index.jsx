@@ -33,7 +33,7 @@ export const BMICalWrap = styled.div`
     max-width: 530px;
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: ${(props) => (props.call ? "50px" : "30px")};
     z-index: 2;
     
 `

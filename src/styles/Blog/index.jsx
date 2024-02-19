@@ -12,7 +12,12 @@ export const BlogWrap = styled.div`
     max-width: 1240px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 80px;
+
+    @media (max-width: 500px)
+    {
+        gap: 50px;
+    }
 `
 export const BlogCard = styled.div`
     background-color: white;
