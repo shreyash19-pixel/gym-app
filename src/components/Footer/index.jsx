@@ -1,6 +1,6 @@
 import React from 'react'
 import GymLogo from '../../assets/footer-logo.svg'
-import { DaysWrap, Footer1Wrap, Footer2Perk, Footer2Title, Footer2Wrap, FooterContainer, FooterCopyrightWrap, FooterIcon, FooterIconWrap, FooterWrap, TimeWrap } from '../../styles/Footer'
+import { DaysWrap, Footer1DescWrap, Footer1Wrap, Footer2Perk, Footer2Title, Footer2Wrap, FooterContainer, FooterCopyrightWrap, FooterIcon, FooterIconWrap, FooterWrap, TimeWrap } from '../../styles/Footer'
 import { LogoImg, LogoWrap } from '../../styles/Nav'
 import { BlogDesc } from '../../styles/Blog'
 import { FaFacebookF } from "react-icons/fa";
@@ -34,10 +34,12 @@ const Footer = () => {
                 <LogoWrap>
                     <LogoImg src = {GymLogo} />
                 </LogoWrap>
-                <BlogDesc style={{fontWeight: "500", lineHeight: "1.4", fontSize: "15px"}}>
-                    Take your health and body to the next level with our comprehensive program designed to 
-                    help you reach your fitness goals.
-                </BlogDesc>
+                <Footer1DescWrap>
+                    <BlogDesc style={{fontWeight: "500", lineHeight: "1.4", fontSize: "15px"}}>
+                        Take your health and body to the next level with our comprehensive program designed to 
+                        help you reach your fitness goals.
+                    </BlogDesc>
+                </Footer1DescWrap>
                 <FooterIconWrap>
                     {icons.map((i) => (
                     <FooterIcon>

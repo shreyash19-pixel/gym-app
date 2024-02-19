@@ -15,7 +15,8 @@ export const FooterWrap = styled.div`
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 1000px)
+
+    @media (max-width: 900px)
     {
         flex-direction: column;
         align-items: center;
@@ -28,15 +29,19 @@ export const Footer1Wrap = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 460px;
+    max-width: 380px;
     gap: 20px;
+`
+
+export const Footer1DescWrap = styled.div`
+    width: 100%;
 `
 
 export const FooterIconWrap = styled.div`
     display: flex;
     gap: 15px;
 
-    @media (max-width: 1000px)
+    @media (max-width: 900px)
     {
         justify-content: center;
     }
@@ -63,7 +68,7 @@ export const FooterCopyrightWrap = styled.div`
     width: 100%;
     max-width: 300px;
 
-    @media (max-width: 1000px)
+    @media (max-width: 900px)
     {
         max-width: 1000px;
     }
