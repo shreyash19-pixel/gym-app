@@ -10,6 +10,7 @@ import BMI from '../../views/BMI'
 import Pricing from '../../views/Pricing'
 import Blog from '../../views/Blog'
 import Call from '../../views/Call'
+import Footer from '../../components/Footer'
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
         <Pricing />
         <Blog />
         <Call />
+        <Footer />
     </div>
   )
 }
