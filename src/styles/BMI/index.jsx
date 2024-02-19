@@ -96,7 +96,7 @@ export const BMIInput = styled.input`
 
 export const BMILabelContainer = styled.div`
     display: flex;
-    min-height: 50px;
+    min-height: 40px;
 `
 
 export const BMILabelWrap = styled.div`
@@ -119,7 +119,8 @@ export const CalculatedBMI = styled.div`
     font-weight: 500;
 
     @media (max-width: 450px) {
-        font-size: 12px;
+        font-size: 13px;
+        font-weight: 600;
     }
 `
 
