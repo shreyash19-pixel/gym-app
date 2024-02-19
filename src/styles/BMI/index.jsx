@@ -8,12 +8,7 @@ export const BMIContainer = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;
-   
-
-   
-
 `
-
 
 export const BMIWrap = styled.div`
     width: 100%;
@@ -21,6 +16,8 @@ export const BMIWrap = styled.div`
     padding: 50px 30px;
     display: flex;
     justify-content: flex-start;
+    position: relative;
+ 
 
     @media (max-width: 600px)
     {
@@ -34,8 +31,23 @@ export const BMICalWrap = styled.div`
     display: flex;
     flex-direction: column;
     gap:30px;
-    position: relative;
+    z-index: 2;
+    
+`
 
+export const BMISpanWrap = styled.span`
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 1;
+   
+
+    @media (max-width: 600px)
+    {
+        background-color: #00000063;
+    }
 `
 
 export const BMIHeadingSpan = styled.span`
@@ -77,15 +89,15 @@ export const BMIInput = styled.input`
     @media (max-width: 450px)
     {
         background-color: white;
-    }
-
-    @media (max-width: 450px) {
         padding: 10px;
+        font-size: 12px;
+        color: white;
     }
 `
 
 export const BMILabelContainer = styled.div`
     display: flex;
+    min-height: 50px;
 `
 
 export const BMILabelWrap = styled.div`

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BMICalWrap, BMIContainer, BMIDesc, BMIHeadingSpan, BMIInput, BMIInputContainer, BMIInputWrap, BMILabel, BMILabelContainer, BMILabelWrap, BMIWrap, CalculateBtn, CalculateBtnWrap, CalculatedBMI } from '../../styles/BMI'
+import { BMICalWrap, BMIContainer, BMIDesc, BMIHeadingSpan, BMIInput, BMIInputContainer, BMIInputWrap, BMILabel, BMILabelContainer, BMILabelWrap, BMISpanWrap, BMIWrap, CalculateBtn, CalculateBtnWrap, CalculatedBMI } from '../../styles/BMI'
 import { ChooseHeading } from '../../styles/ChooseUs'
 
 const BMI = () => {
@@ -48,8 +48,8 @@ const BMI = () => {
   return (
     <BMIContainer>
         <BMIWrap>
-
-            <BMICalWrap>
+            <BMISpanWrap></BMISpanWrap>
+            <BMICalWrap>  
                 <ChooseHeading>Let's Calculate Your  <BMIHeadingSpan>BMI</BMIHeadingSpan></ChooseHeading>
                 <BMIDesc>
                     Easily determine your body mass index with our accurate calculation tool.
