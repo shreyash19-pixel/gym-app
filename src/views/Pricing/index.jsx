@@ -21,7 +21,7 @@ const Pricing = () => {
   return (
     <PriceContainer>
         <ClassesWrap coach = "true">
-            <HeadingWrap>
+            <HeadingWrap style={{zIndex: "2"}}>
                 <HeroImgWrap>
                     <HeroDesignImg src = {PricingTitleImg} />
                     <CoachesHeadingText>

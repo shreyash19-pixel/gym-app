@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Pricebg from '../../assets/background.jpg'
-import BgShapeImg from '../../assets/bg-text.png'
+import BgShape1Img from '../../assets/bg-text.png'
+import BgShape2Img from '../../assets/bg-dumbell.png'
 
 export const PriceContainer = styled.div`
     width: 100%;
@@ -10,17 +11,27 @@ export const PriceContainer = styled.div`
     background-image: url(${Pricebg});
     position: relative;
 
-    /* &::before
+    &::before
     {
-        content: url(${BgShapeImg});
+        content: url(${BgShape1Img});
         position: absolute;
-        top:0;
+        top:130px;
         left:0;
-    } */
+        z-index: 0;
+    }
+
+    &::after
+    {
+        content: url(${BgShape2Img});
+        position: absolute;
+        bottom:0;
+        right:0;
+        z-index: 0;
+    }
 
     @media (max-width: 500px)
     {
-        padding: 50px 20px;
+        padding-inline: 20px;
     }
 `
 
@@ -29,6 +40,7 @@ export const PriceCardContainer = styled.div`
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
+    z-index: 2;
 
     @media (max-width: 1000px)
     {
@@ -42,6 +54,7 @@ export const PricingCardWrap = styled.div`
     min-height: 400px;
     display: flex;
     flex-direction: column;
+    
 `
 
 export const BeginnerWrap = styled.div`
