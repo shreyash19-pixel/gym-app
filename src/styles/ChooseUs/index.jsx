@@ -98,7 +98,7 @@ export const ChooseHeading = styled.h1`
 
     @media (max-width: 500px)
     {
-        font-size: 23px;
+        font-size: 25px;
     }
 `
 

@@ -6,6 +6,7 @@ import Classes from '../../views/Classes'
 import ChooseUs from '../../views/ChooseUs'
 import Coaches from '../../views/Coaches'
 import Testimonial from '../../views/Testimonial'
+import BMI from '../../views/BMI'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <ChooseUs />
         <Coaches/>
         <Testimonial />
+        <BMI />
     </div>
   )
 }
