@@ -100,8 +100,14 @@ export const ClassesImgWrap1 = styled.div`
         > ${ClassesIconWrap} {
             opacity: 1;
             transition: all .4s;
+            
+        }
+
+        > ${ClassesIcon}{
+            color: #FF0336;
         }
     }
+
 `;
 
 
