@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useContext, useState} from 'react'
 import {CrossWrap, ResponsiveWrap,Hamburger,ContactUsWrap, IconWrap, JoinNowWrap, LogoImg, LogoWrap, NavBar, NavLinks, NavLinksWrap, NavbarWrap } from '../../styles/Nav'
 import { IoPersonOutline } from "react-icons/io5";
 import { BsTextParagraph } from "react-icons/bs";
@@ -6,6 +6,8 @@ import { FaPlus } from "react-icons/fa6";
 import GymLogo from '../../assets/Logo.svg'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
+import Slider from '../Slider';
+import AppContext from '../../utils/AppContext';
 
 const Nav = () => {
 
@@ -22,6 +24,8 @@ const Nav = () => {
 
     const [nav, setNav] = useState(false)
     const [stickyNav, setStickyNav] = useState(false)
+    const {slider, setSlider} = useContext(AppContext)
+
     nav?document.body.style.overflow="hidden":document.body.style.overflow="auto";
 
     const handleStickyNav = () => {
@@ -67,7 +71,7 @@ const Nav = () => {
                 <IconWrap>
                     <IoPersonOutline />
                 </IconWrap>
-                <IconWrap>
+                <IconWrap onClick={() => setSlider(!slider)}>
                     <BsTextParagraph />
                 </IconWrap>
                 <JoinNowWrap>
@@ -78,6 +82,7 @@ const Nav = () => {
                 </JoinNowWrap>
             </ContactUsWrap>
         </NavBar>
+       {slider && <Slider />}
     </NavbarWrap>
   )
 }
