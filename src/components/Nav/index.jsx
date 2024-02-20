@@ -8,9 +8,11 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import Slider from '../Slider';
 import AppContext from '../../utils/AppContext';
+import { useNavigate } from 'react-router-dom'
 
 const Nav = () => {
 
+    const navigate = useNavigate()
     const navLinks = [
         {title : "Home", link : "#Home"},
         {title : "About", link : "#About"},
@@ -68,7 +70,7 @@ const Nav = () => {
             <Hamburger onClick = {() => setNav(!nav)}>
               <GiHamburgerMenu />
             </Hamburger>
-                <IconWrap>
+                <IconWrap onClick = {() => navigate("/SignUp")}>
                     <IoPersonOutline />
                 </IconWrap>
                 <IconWrap onClick={() => setSlider(!slider)}>
