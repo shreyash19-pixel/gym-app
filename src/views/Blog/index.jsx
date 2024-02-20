@@ -16,7 +16,7 @@ const Blog = () => {
     ]
 
   return (
-    <BlogContainer>
+    <BlogContainer id = "Blog">
         <BlogWrap>
             <HeadingWrap>
                 <HeroImgWrap>

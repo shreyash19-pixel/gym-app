@@ -48,10 +48,10 @@ export const NavLinks = styled.a`
     color: white;
     font-size: 16px;
     font-weight: 500;
+    transition: all .4s ease-in-out;
 
     &:hover{
         color: #FF0336;
-        transition: all .4s ease-in-out;
     }
 
     @media (max-width: 1200px)
@@ -136,15 +136,42 @@ export const IconWrap = styled.div`
     padding: 8px;
     font-weight: 600;
     cursor: pointer;
-    background-color: ${(props) => (props.join ? "#FF0336":"transparent")};
+    background-color: transparent;
     height: 40px;
     border-radius: 5px;
+    transition: all .5s;
 
     @media (max-width: 450px)
     {
         font-size: 20px;
     }
+
+    &:hover{
+        color: #FF0336;
+    }
 `
+
+
+export const JoinUsIcon = styled.div`
+    color: white;
+    font-size: 25px;
+    padding: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #FF0336;
+    height: 40px;
+    border-radius: 5px;
+    transition: all .5s;
+
+    @media (max-width: 450px) {
+        font-size: 20px;
+    }
+
+    &:hover {
+        transform: rotate(360deg); /* Rotate 360 degrees when hovered */
+    }
+`;
+
 
 export const JoinNowWrap = styled.div`
     display: flex;
@@ -156,6 +183,7 @@ export const JoinNowWrap = styled.div`
     color: white;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
 
     @media (max-width: 620px)
     {

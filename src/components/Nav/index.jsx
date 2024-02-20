@@ -1,5 +1,5 @@
 import React,{useContext, useState} from 'react'
-import {CrossWrap, ResponsiveWrap,Hamburger,ContactUsWrap, IconWrap, JoinNowWrap, LogoImg, LogoWrap, NavBar, NavLinks, NavLinksWrap, NavbarWrap } from '../../styles/Nav'
+import {CrossWrap, ResponsiveWrap,Hamburger,ContactUsWrap, IconWrap, JoinNowWrap, LogoImg, LogoWrap, NavBar, NavLinks, NavLinksWrap, NavbarWrap, JoinUsIcon } from '../../styles/Nav'
 import { IoPersonOutline } from "react-icons/io5";
 import { BsTextParagraph } from "react-icons/bs";
 import { FaPlus } from "react-icons/fa6";
@@ -16,12 +16,10 @@ const Nav = () => {
     const navLinks = [
         {title : "Home", link : "#Home"},
         {title : "About", link : "#About"},
-        {title : "Gallery", link : "#Gallery"},
-        {title : "Schedule", link : "#Schedule"},
         {title : "Blog", link : "#Blog"},
         {title : "Pricing", link : "#Pricing"},
         {title : "Classes", link : "#Classes"},
-        {title : "Contact", link : "#Contact"}
+        {title : "Contact", link : "/Contact"}
     ]
 
     const [nav, setNav] = useState(false)
@@ -76,10 +74,10 @@ const Nav = () => {
                 <IconWrap onClick={() => setSlider(!slider)}>
                     <BsTextParagraph />
                 </IconWrap>
-                <JoinNowWrap>
-                    <IconWrap join = "true">
-                        <FaPlus />
-                    </IconWrap>
+                <JoinNowWrap onClick={() => navigate("/Contact")}>
+                    <JoinUsIcon>
+                      <FaPlus />
+                    </JoinUsIcon>
                     JOIN CLASS NOW
                 </JoinNowWrap>
             </ContactUsWrap>

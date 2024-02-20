@@ -8,7 +8,7 @@ import { MdFacebook } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id = "Home">
         <HeroInfoContainer>
         <HeroInfoWrap>
             <HeroImgWrap>

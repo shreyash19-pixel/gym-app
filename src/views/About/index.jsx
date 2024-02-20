@@ -19,7 +19,7 @@ const About = () => {
     ]
 
   return (
-    <AboutContainer>
+    <AboutContainer id = "About">
         <AboutWrap>
             <AboutCardsContainer>
                 {cards.map((card) => (

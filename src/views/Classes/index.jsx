@@ -12,7 +12,7 @@ import { GiWeightLiftingUp } from "react-icons/gi";
 
 const Classes = () => {
   return (
-    <ClassesContainer>
+    <ClassesContainer id = "Classes">
         <ClassesWrap>
             <HeadingWrap>
                 <HeroImgWrap>

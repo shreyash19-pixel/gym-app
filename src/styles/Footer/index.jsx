@@ -95,6 +95,8 @@ export const Footer2Title = styled.div`
         bottom: -5px;
         left:0;
     }
+
+   
 `
 
 export const Footer2Perk = styled.div`

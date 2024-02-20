@@ -19,7 +19,7 @@ const Pricing = () => {
     ]
 
   return (
-    <PriceContainer>
+    <PriceContainer id = "Pricing">
         <ClassesWrap coach = "true">
             <HeadingWrap style={{zIndex: "2"}}>
                 <HeroImgWrap>
