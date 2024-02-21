@@ -13,6 +13,7 @@ export const SliderContainer = styled.div`
     animation : left .4s ease-out;
     padding: 40px;
     overflow-y: auto;
+    z-index: 80;
 
     @media (max-width: 450px)
     {
